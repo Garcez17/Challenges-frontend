@@ -25,19 +25,22 @@ const Home: NextPage = () => {
           color="cyan"
         />
 
-        <Card 
-          title="Team Builder"
-          description="Scans our talent network to create the optimal for your project"
-          imageUrl="/icon-team-builder.svg" 
-          color="red" 
-        />
+        <div className={styles.flexCards}>
+          <Card 
+            title="Team Builder"
+            description="Scans our talent network to create the optimal for your project"
+            imageUrl="/icon-team-builder.svg" 
+            color="red" 
+          />
 
-        <Card 
-          title="Karma"
-          description="Regularly evaluates our talent to ensure quality"
-          imageUrl="/icon-karma.svg"
-          color="orange"
-        />
+          <Card 
+            title="Karma"
+            description="Regularly evaluates our talent to ensure quality"
+            imageUrl="/icon-karma.svg"
+            color="orange"
+          />
+        </div>
+
         
         <Card
           title="Calculator"
