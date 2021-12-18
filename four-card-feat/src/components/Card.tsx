@@ -12,11 +12,17 @@ type CardProps = {
 export function Card({ color, title, description, imageUrl }: CardProps) {
   return (
     <div className={`${styles.container} ${styles[color]}`}>
-      <h3>{title}</h3>
+      <h2>{title}</h2>
       <p>{description}</p>
 
       <div>
-        <Image className={styles.test} src={imageUrl} alt={`${title} icon`} width={64} height={64} />
+        <Image 
+          src={imageUrl} 
+          alt={`${title} icon`} 
+          width={64} 
+          height={64}
+          loading="lazy"
+        />
       </div>
     </div>
   )
