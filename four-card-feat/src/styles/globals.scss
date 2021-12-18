@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --white: #FFFFFF;
+
+  --gray-100: hsl(0, 0%, 98%);
+
+  --red-500: hsl(0, 78%, 62%);
+  --cyan-500: hsl(180, 62%, 55%);
+  --orange-500: hsl(34, 97%, 64%);
+  --blue-100: hsl(229, 6%, 66%);
+  --blue-500: hsl(212, 86%, 64%);
+  --blue-900: hsl(234, 12%, 34%);
+}
+
+@media(max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media(max-width: 1080px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  background-color: var(--gray-100);
+  color: var(--blue-900);
+}
+
+body, input, textarea, select, button {
+  font: 400 1rem "Poppins", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
